@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="ja-JP">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Satoshi Kojima</title>
+	<style>
+      @font-face {
+          font-family: "Yu Gothic";
+          src: local("Yu Gothic Medium");
+          font-weight: 100;
+      }
+      @font-face {
+          font-family: "Yu Gothic";
+          src: local("Yu Gothic Medium");
+          font-weight: 200;
+      }
+      @font-face {
+          font-family: "Yu Gothic";
+          src: local("Yu Gothic Medium");
+          font-weight: 300;
+      }
+      @font-face {
+          font-family: "Yu Gothic";
+          src: local("Yu Gothic Medium");
+          font-weight: 400;
+      }
+      @font-face {
+          font-family: "Yu Gothic";
+          src: local("Yu Gothic Bold");
+          font-weight: bold;
+      }
+      @font-face {
+          font-family: "Helvetica Neue";
+          src: local("Helvetica Neue Regular");
+          font-weight: 100;
+      }
+      @font-face {
+          font-family: "Helvetica Neue";
+          src: local("Helvetica Neue Regular");
+          font-weight: 200;
+      }
+
+
+      html {
+          font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+		  background-color: white;
+		  padding: 1em
+	  }
+	  body {
+		  margin: 0 auto;
+		  max-width: 60em;
+		  padding: 2em;
+		  border: 2px solid gray;
+		  line-height: 1.5;
+      }
+
+	  @media print {
+		  body {
+			  font-size: 10pt;
+			  color: black;
+			  padding: 0;
+			  margin: auto;
+			  background-color: white;
+			  border: none;
+			  max-width: none;
+		  }
+		  html {
+			  padding: 0;
+			  margin: 0;
+		  }
+		  @page {
+			  size: A4;
+			  margin: 10px;
+		  }
+	  }
+
+	  @media screen and (max-width: 800px) { body { padding: 1.5em; } }
+	  @media screen and (max-width: 760px) {
+		  :html { padding: 0; }
+		  body { border: none; }
+	  }
+
+	  h1 {
+		  clear: both;
+		  font-size: 1.3em;
+		  border-bottom: 1px solid black;
+		  page-break-before: auto;
+		  page-break-inside: avoid;
+		  page-break-after: avoid;
+		  margin-bottom: 0.5em;
+		  margin-top: 1.5em;
+		  letter-spacing: 0.05em;
+	  }
+	  @media screen and (max-width: 760px) { h1 { margin-top: 1em; } }
+      
+	  ul {
+		  margin: 0;
+		  page-break-before: avoid;
+		  page-break-after: auto;
+	  }
+	  ul li {
+		  page-break-inside: avoid;
+	  }
+	  li { list-style: circle; }
+	  dl {
+		  margin: 0.5em 0;
+		  page-break-before: avoid;
+		  page-break-inside: avoid;
+		  page-break-after: auto;
+          grid-template-columns: 10em 1fr;
+          display: grid;
+	  }
+	  dt {
+          padding-left: 0.5em;
+          grid-column: 1;
+          font-weight: bold;
+	  }
+	  dd {
+          grid-column: 2;
+          margin-left: 0;
+      }
+	  @media screen and (max-width: 760px) {
+          dl {
+              display: block;
+          }
+          dt {
+              padding-left: 0;
+          }
+		  dd {
+              margin-top: 0;
+              margin-left: 1em;
+          }
+	  }
+	  @media print {
+		  a {
+			  text-decoration: none;
+			  color: currentColor;
+		  }
+	  }
+
+      /* profile */
+      .profile {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+      .profile .name {
+          font-weight: bold;
+      }
+      .profile ul {
+          list-style-type: none;
+      }
+      .profile ul li {
+          list-style: none;
+      }
+      .profile .address, .profile .links {
+          padding-left: 0;
+      }
+      @media screen and (max-width: 760px) {
+          .profile { display: block; }
+          .profile .links { padding-left: 1em; }
+      }
+      /* exp */
+      .exp {
+          margin-left: 0;
+          padding-left: 0.5em;
+      }
+      .exp > li {
+          display: grid;
+          margin-left: 0;
+          margin-top: 1em;
+          grid-template-columns: 10em 1fr;
+      }
+      .exp .period {
+          font-weight: 200;
+          grid-column: 1;
+      }
+      .exp div, .exp ul {
+          display: inline;
+          grid-column: 2;          
+      }
+	  .org { font-weight: bold; }
+
+      @media screen and (max-width: 760px) {
+          .exp > li {
+              display: block;
+          }
+          .exp .period {
+              display: block;
+              padding-left: 0;
+          }
+          .exp .org {
+              padding-left: 0;
+          }
+          .exp > li div, .exp > li > ul {
+              display: block;
+              padding-left: 2em;
+          }
+      }
+      .sentence {
+          text-indent: 1em ;
+      }
+	</style>
+</head>
+<body>
+	<section class="profile">
+      <ul class="address">
+	    <li class="name">小嶋智/Satoshi Kojima:
+	    <li>Software Developer at Tokyo
+      </ul>
+      <ul class="links">
+        <li> Web: <a href="https://skoji.jp">skoji.jp</a>
+        <li> mail: <a href="mailto:skoji@skoji.jp">skoji@skoji.jp</a> 
+        <li> GitHub: <a href="https://github.com/skoji">https://github.com/skoji</a>
+      </ul>
+    </section>
+
+    <h1>経歴概要</h1>
+    <ul class="exp">
+      <p class="sentence">
+        複写機やコピー機を外部から制御するソフトウェアおよび、構造化文書を処理するソフトウェアの企画・設計・実装を行ってきた。小規模チームのリーディング・技術教育・Webサービスの設計と実装なども並行して行なってきた。本業と並行して、電子書籍作成のツールキット実装と、インディ電子書籍の企画・制作・発行を行ってきた。2019年7月からフリーランス。
+      </p>
+    </ul>
+    <h1>技術的スキル</h1>
+    <dl>
+      <dt>プログラミング言語</dt>
+      <dd>Ruby, Rust, JavaScript, TypeScript, Kotlin, Lua, C++, C, C#,  Go, PHP, Java</dd>
+      <dt>そのほか</dt>
+      <dd>HTML, CSS, EPUB, Docker, Git, Travis CI, AWS, Unix scripting</dd>
+    </dl>
+    <h1>自然言語</h1>
+    <dl>
+      <dt>日本語</dt>
+      <dd>第一言語</dd>
+      <dt>英語</dt>
+      <dd>技術文書を読むことには不都合はない。TOEIC 915(2012年)</dd>
+    </dl>
+	<h1>職務経歴</h1>
+	<ul class="exp">
+        <li>
+          <div class="period">1995.7 - 1997.12</div>
+          <div class="org">富士ゼロックス</div>
+          <ul>
+            <li>「ペーパーUI」複合機開発。（Solaris, C++, PostScript）
+          </ul>
+        <li>
+          <div class="period">1998.1 - 2003.6</div>
+          <div class="org">富士ゼロックス</div>
+          <ul>
+            <li>複合機＋PCコントローラの設計・開発。（組み込みWindows, VC++など）
+          </ul>
+        <li>
+          <div class="period">2003.7 - 2010.3</div>
+          <div class="org">富士ゼロックス</div>
+          <ul>
+            <li>プリントサーバシステム設計・開発。（Windows 2000/Windows NT/XP, C# / .NET ASP）
+          </ul>
+        <li>
+          <div class="period">2010.4 - 2015.6</div>
+          <div class="org">富士ゼロックス</div>
+          <ul>
+            <li>テンプレートパブリッシングシステム アーキテクチャ設計・開発。（Java 6/7, JavaScript、Tomcat, Apache, Spring MVC)
+          </ul>
+        <li>
+          <div class="period">2015.7 - 2018.9</div>
+          <div class="org">トリムマーク株式会社（旧称：株式会社ビブリオスタイル）</div>
+          <ul>
+            <li>CSS組版ソフトウェアの設計・開発。PDF生成エンジンの主担当。(C++, Rust, JavaScript）
+          </ul>
+		<li>
+		  <div class="period">2018.11 - 2019.4</div>
+          <div class="org">株式会社ボイジャー</div>
+          <ul>
+            <li> ブラウザによる電子書籍リーダシステムの一部を担当（C++/PHP）
+            <li> Webサービスプロトタイプ設計・開発（Ruby on Rails, Vue.js, Docker）
+          </ul>
+		<li>
+		  <div class="period">2019.7 - 2022</div>
+          <div class="org">フリーランス</div>
+          <ul>
+            <li> JavaFX デスクトップアプリ改修（Kotlin, TornadoFXなど）
+            <li> 電子書籍関連コンサルティング・関連システム試作
+	    <li> モダンWebブラウザ向けEPUBビューアエンジン開発
+          </ul>
+	</ul>
+	<h1>その他の経歴</h1>
+    <ul class="exp">
+      <li>
+        <div class="period">2010 - 現在</div>
+        <div>電子書籍に関わるオープンソースソフトウェア開発。<a href="https://github.com/skoji/gepub">EPUBライブラリ</a>、<a href="https://github.com/skoji/noramark">独自マークアップ言語</a>など。主にRubyで記述。</div>
+      </li>
+      <li>
+        <div class="period">2017 - 現在</div>
+        <div>SNS「Mastodon」のインスタンス運営。<a href="https://sandbox.skoji.jp">自分専用</a>のほか、<a href="https://bookwor.ms">本好き向けのインスタンス</a>を運営。</div>
+      </li>
+      <li>
+        <div class="period">2020 - 現在</div>
+        <div><a href="https://play.date">Playdate</a>向けゲーム開発</div>
+      </li>
+      <li>
+        <div class="period">2010 - 2015</div>
+        <div>インディ電子書籍の製作・発行。<a href="http://kanakanabooks.com/category/books">『電子雑誌トルタル』</a>への参加、<a href="https://asagaya-densho.org">アサガヤデンショ</a>の主宰など。</div>
+      </li>
+      <li>
+        <div class="period">2005 - 現在</div>
+        <div>WordPress/Movable Type/Middleman/JekyllなどによるWebサイト構築。</div>
+      </li>
+    </ul>
+    <h1>学歴</h1>
+    <ul class="exp">
+      <li>
+        <div class="period">1989.4</div>
+        <div class="org">慶應義塾大学</div>
+        <ul><li>入学
+        </ul>
+      <li>
+        <div class="period">1993.3</div>
+        <div class="org">慶應義塾大学理工学部</div>
+        <ul><li>数学科 卒業
+        </ul>
+      <li>
+        <div class="period">1993.4</div>
+        <div class="org">慶應義塾大学理工学研究科</div>
+        <ul><li>前期博士課程（修士課程） 計算機科学専攻入学
+        </ul>
+      <li>
+        <div class="period">1995.3</div>
+        <div class="org">慶應義塾大学理工学研究科</div>
+        <ul><li>前期博士課程（修士課程） 計算機科学専攻修了
+        </ul>
+    </ul>
+</body>
+</html>
+
+ 

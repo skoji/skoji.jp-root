@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="me" href="https://sandbox.skoji.jp/@skoji">
+    <link rel="me" href="https://bookwor.ms/@skoji">
+    <meta name="google-site-verification" content="SIV6UKczOcY_OmS44XuCBi30il5ZJqEfI9JLq4Dui-s" />
+    <title>skoji.jp </title>
+    <script>
+       FontAwesomeConfig = { searchPseudoElements: true };
+    </script>
+    <script defer src="/js/fontawesome-all.min.js"></script>
+    <style>
+	  html {
+		  line-height: 1.2;
+		  font-family: "Helvetica Neue", "Segoe UI", sans-serif;
+	  }
+      body {
+        padding: 0.5rem;
+      }
+      h1, h2, h3, h4, h5, h6 {
+	      font-weight: normal;
+	      margin-bottom: 0.5rem;
+		  margin-top: 0.2rem;
+      }
+      h1 {
+	      font-size: 2.8rem;
+      }
+      h2 {
+	      font-size: 1.4rem;
+      }
+      h3 {
+	      font-size: 1.2rem;
+      }
+      h4,h5,h6 {
+	      font-size: 1.1rem;
+      }
+      .no-bullet {
+	      list-style-type: none;
+      }
+      ul {
+	      margin: 0;
+	      padding: 0 1rem;
+      }
+      .links li {
+	      line-height: 2.0;
+      }
+      .vcard {
+	      margin: 0;
+	      padding: 0.5rem 1rem;
+	      list-style-type: none;
+	      line-height: 1.8;
+		  border: 1px solid #DDDDDD;
+		  display: inline-block;
+      }
+	  .svg-inline--fa {
+	    margin-right: 0.5em;
+	  }
+      .vcard li:before {
+          display: none;
+	      font-family: "Font Awesome 5 Solid";
+	   }
+      .vcard .fn {
+	      font-weight: bold;
+	      
+      }
+      .vcard .fn::before {
+	      content: '\f2b9';
+      }
+      .vcard .locality::before {
+	      content: '\f041';
+      }
+      .vcard .email:before {
+	      content: '\f0e0';
+      }
+      .vcard .resume:before {
+	      content: '\f2c2';
+      }
+      a {
+	      color: #008CBA;
+		  text-decoration: none;
+      }
+      .container {
+ 		  margin: 0 auto;
+		  max-width: 950px;
+		  width: 100%;
+      }
+      .flex {
+	      display: flex;
+		  justify-content:         space-between;
+       }
+       
+       #footer {
+	       margin: 1em 1em;
+	       color: #606060;
+	       font-size: 0.8em;
+       }
+      @media screen and (max-width: 640px) {
+	      .flex {
+		      display: block;
+	      }
+	      .flex section {
+		      margin-top: 1em;
+	      }
+	      #footer {
+		      margin-left: 0;
+	      }
+      }
+    </style>
+  </head>
+  <body>
+  <div class="container">
+	 
+     <h1>skoji.jp</h1>
+     <section class="flex">
+     	<section>
+            <h2>Blogs/Sites/etc</h2>
+            <ul class="no-bullet links">
+              <li><a href="https://skoji.jp/blog/">買い物ログ</a></li>
+              <li><a href="https://bookwor.ms">Bookworms</a></li>
+              <li><a href="https://asagaya-densho.org">アサガヤデンショ</a></li>
+              <li><a href="https://world.hey.com/skoji">HEY world</a></li>
+              <li><a href="https://www.amazon.co.jp/registry/wishlist/TI5VL4PPNS62/ref=cm_sw_r_tw_ws_czYtvb1E5S3JV">Wishlist</a></li>
+            </ul>
+     	</section>
+     	<section>
+            <h2>SNS</h2>
+            <ul class="no-bullet links">
+	          <li><i class="fab fa-mastodon"></i>Mastodon
+	          <ul class="no-bullet">
+		          <li><a rel="me nofollow" href="https://bookwor.ms/@skoji">@skoji@bookwor.ms</a></li>
+                  <li><a rel="me nofollow" href="https://sandbox.skoji.jp/@skoji">@skoji@sandbox.skoji.jp</a></li>
+	          </ul></li>
+              <li><i class="fab fa-twitter"></i><a rel="me nofollow" href="https://twitter.com/skoji">Twitter</a></li>
+              <li><i class="fab fa-github"></i><a rel="me nofollow" href="https://github.com/skoji">GitHub</a></li>
+              <li><i class="fab fa-keybase"></i><a href="https://keybase.io/skoji/">Keybase</a></li>
+              <li><i class="fab fa-instagram"></i><a rel="me nofollow" href="https://instagram.com/skoji">Instagram</a></li>
+            </ul>
+         </section>
+	    <section>
+            <h2>Profile</h2>
+            <ul class="vcard">
+	          <li class="fn">Satoshi Kojima/小嶋智</li>
+              <li class="locality">Asagaya Suginami Tokyo</li>
+              <li class="email"><a href="mailto:skoji@skoji.jp">skoji@skoji.jp</a></li>
+              <li class="resume"><a href="resume.html" target="_blank">職務経歴</a></li>
+            </ul>                  
+	    </section>
+     </section>
+     <section id='footer'>
+		    <div id='ipvx'></span>
+	 </section>
+      
+	  </div>
+
+  </body>
+  <script>
+	  const now = Date.now();
+	  fetch('/ipx?' + now).then(function(response) {
+		 return response.text();
+	  }).then(function(text) {
+		  document.getElementById('ipvx').innerText = "Connected via " + text;
+	});
+  </script>
+</html>
